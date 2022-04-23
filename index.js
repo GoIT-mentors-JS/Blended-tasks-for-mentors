@@ -1,4 +1,4 @@
-//1. Используя функцию if...else,
+//1. Используя конструкцию if...else,
 //напишите код, который будет спрашивать:
 //"Какое официальное название JavaScript?"
 //Если пользователь вводит "ECMAScript",
@@ -50,7 +50,7 @@
 //то prompt запрашивает пароль.
 //Если ничего не ввели или нажата клавиша Esc
 //вывести стороку "Отменено"
-//В противном случае вывксти строку "Я вас не знаю"
+//В противном случае вывести строку "Я вас не знаю"
 
 //Пароль проверять так:
 //Если введён пароль "Я главный",
@@ -245,3 +245,23 @@
 //     alert('your number is lower then 100')
 //   }
 // }
+
+
+
+// function findLongestWord(string) {
+
+// const stringArray = string.split(" ");
+// let longestWord = stringArray[0];
+// const maxLength = longestWord.length;
+
+// for (word of stringArray) {
+//   const wordLength = word.length;
+
+//   if (wordLength > maxLength) {
+//       longestWord = word;}
+// }
+// return longestWord;
+// }
+
+
+console.log('5' + 5);
