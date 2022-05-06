@@ -1,16 +1,16 @@
-//=============1=============
+//TODO:=============1=============
 //Создайте массив styles с элементами «Джаз» и «Блюз».
 //Добавьте «Рок-н-ролл» в конец.
 //Замените значение «Блюз» на «Классика».
 //Удалите первый элемент массива и выведите его в консоль.
 //Вставьте «Рэп» и «Регги» в начало массива.
 
-//=============2=============
+//TODO:=============2=============
 //Напишите функцию min(a, b), которая возвращает
 //меньшее из чисел a, b
 //нужно добавить проверку, что функция получает числа
 
-//=============3=============
+//TODO:=============3=============
 //Напишите функцию logItems(array) которая принимает
 //массив и использует цикл for, который для каждого
 //элемента массива будет выводить сообщение в формате
@@ -19,59 +19,59 @@
 //['Джаз', 'Блюз', 'Рок-н-ролл', 'Регги', 'Рэп']
 //[{name: 'Джаз', engl: "jazz", number: 1}, {name: 'Блюз', engl: "blues", number: 2}, {name: 'Рок-н-ролл', engl: "rock 'n' roll ", number: 3}, {name: 'Регги', engl: "reggae", number: 4}, {name: 'Рэп', engl: "rap", number: 5}]
 
-//=============4=============
+//TODO:=============4=============
 //Напиши функцию findSmallerNumber(numbers)
 //которая ищет самое маленькое число в массиве
 //Добавь проверку что функция получает массив
 //const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
 
-//=============5=============
+//TODO:=============5=============
 //Вернуть отсортированную копию массива по возростанию
 //не меняя исходный массив
 //не использовать Array.prototype.sort()
 //const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
 
-function bb(numbers) {
-  for (let i = 0; i < numbers.length; i++) {
-    for (let j = 0; j < numbers.length; j++) {
-      if (numbers[j] > numbers[j + 1]) {
-        let temp = numbers[j];
-        numbers[j] = numbers[j + 1];
-        numbers[j + 1] = temp;
-      }
-    }
-  }
-  return numbers;
-}
+// function bb(numbers) {
+//   for (let i = 0; i < numbers.length; i++) {
+//     for (let j = 0; j < numbers.length; j++) {
+//       if (numbers[j] > numbers[j + 1]) {
+//         let temp = numbers[j];
+//         numbers[j] = numbers[j + 1];
+//         numbers[j + 1] = temp;
+//       }
+//     }
+//   }
+//   return numbers;
+// }
 
-//=============6=============
+//TODO:=============6=============
 //Напишите функцию caculculateAverage()
 //которая принимает произвольное количество
 //аргументов и возвращает их среднее значение.
 //Добавить проверку, что аргументы это числа.
 
-function calculateAverage() {
-  const args = arguments;
-  let sum = 0;
-  let totalCount = 0;
-  for (const arg of args) {
-    if (typeof arg !== "number") {
-      continue;
-    }
-    sum += arg;
-    totalCount += 1;
-  }
-  return sum / totalCount;
-}
+// function calculateAverage() {
+//   const args = arguments;
+//   let sum = 0;
+//   let totalCount = 0;
+//   for (const arg of args) {
+//     if (typeof arg !== "number") {
+//       continue;
+//     }
+//     sum += arg;
+//     totalCount += 1;
+//   }
+//   return sum / totalCount;
+// }
 
-//=============7=============
+//TODO:=============7=============
 //Напиши функцию findLongestWord(string)
 //которая принимает произвольную строку
 //состоящую только из слов разделенных
 //пробелом (параметр string)
 //и возвращает самое длинное слово в этой строке
 
-//=============8=============
+//TODO:=============8=============
 //Напишите функцию findTheColor()
 //которая принимает название цвета
 //определяет его наличие в массиве
@@ -81,52 +81,52 @@ function calculateAverage() {
 // document.body.style.background = 'red';
 //const colors = ['blue', 'yellow', 'olive', 'fuchsia', 'lime', 'aqua', 'maroon']
 
-//=============9=============
+//TODO:=============9=============
 //Напишите функции для работы с массивом
 //add(name) добавляет курс в конец коллекции
 //removeCourse(name) удаляет курс из коллекции
 //updateCourse(oldName, newName) изменяет имя на новое
 
-//=============10=============
+//TODO:=============10=============
 //Напишите код для поиска пароля в массиве
 //Через include и тернарный оператор
 // const passwords = ['ajax123', 'polly456', 'mango789', 'semiBold'];
 // const password = 'semiBold';
 
-//=============11=============
+//TODO:=============11=============
 //Напишите скрипт который заменяет регистр каждого символа
 //в стороке на противоположный
 //Например 'JavaScript' должен вернуть 'jAVAsCRIPT'
-const string = "JavaScript";
-const letters = string.split("");
-let invetedString = "";
+// const string = "JavaScript";
+// const letters = string.split("");
+// let invetedString = "";
 // invetedString += letter === letter.toLocaleLowerCase()? letter.toLocaleUpperCase(): letter.toLocaleLowerCase()
-for (const letter of letters) {
-  if (letter === letter.toLocaleLowerCase()) {
-    console.log("эта буква в нижнем регистре!", letter);
-    invetedString += letter.toLocaleUpperCase();
-  } else {
-    console.log("эта буква в верзнем регистре!", letter);
-    invetedString += letter.toLocaleLowerCase();
-  }
-}
+// for (const letter of letters) {
+//   if (letter === letter.toLocaleLowerCase()) {
+//     console.log("эта буква в нижнем регистре!", letter);
+//     invetedString += letter.toLocaleUpperCase();
+//   } else {
+//     console.log("эта буква в верзнем регистре!", letter);
+//     invetedString += letter.toLocaleLowerCase();
+//   }
+// }
 
-//=============12===============
+//TODO:=============12===============
 //rgb to hex
 //https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
 
-function componentToHex(c) {
-  let hex = c.toString(16);
-  return hex.length === 1 ? "0" + hex : hex;
-}
+// function componentToHex(c) {
+//   let hex = c.toString(16);
+//   return hex.length === 1 ? "0" + hex : hex;
+// }
 
-function rgbToHex(r, g, b) {
-  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
-}
-rgbToHex;
-0, 51, 255;
+// function rgbToHex(r, g, b) {
+//   return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+// }
+// rgbToHex;
+// 0, 51, 255;
 
-//=============13===============
+//TODO:=============13===============
 //Написать функцию, которая разобъет строку на массив
 //по 2 буквы, если у последней буквы нет пары, то
 //должна записаться 1 буква.
@@ -135,13 +135,13 @@ rgbToHex;
 //*если у последней буквы нет пары, вернет _
 //строка 'abc' - вернет ['ab', 'c_']
 
-//=============14===============
+//TODO:=============14===============
 //Напишите функцию unique(arr), которая возвращает массив,
 //содержащий только уникальные элементы arr.
 //const words = ["HTML","CSS", "JS", "React", "JS", "CSS", "JS",
 // "Node.js", "JS", "React", "CSS", "React", "HTML", "Node.js"];
 
-//=============15===============
+//TODO:=============15===============
 //Создайте функцию multiplyNumeric(obj),
 //которая умножает все числовые свойства объекта obj на 2.
 // до вызова функции
@@ -160,7 +160,7 @@ rgbToHex;
 //   title: "My menu"
 // };
 
-//==============16================
+//TODO:==============16================
 
 //Проверка на палиндром
 //const result = 'reversestring'.split('').reverse().join('') ;
@@ -168,7 +168,7 @@ rgbToHex;
 //Лёша на полке клопа нашёл
 //А роза упала на лапу Азора
 
-//TODO:=======
+//TODO:==============17================
 // TASK 1
 // Что выведет следующий код?
 // let fruits = ["Яблоки", "Груша", "Апельсин"];
