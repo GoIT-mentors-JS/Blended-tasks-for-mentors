@@ -196,3 +196,81 @@ const account = {
   getTransactionType(type) {},
 };
 
+//TODO:===========Task8============
+// Добавить метод getinfo в объект user, который будет возвращать инфу о пользователе в формате
+// Name: Peter. Surname: Parker. Age: 22. Position: spider-man.
+
+// const user = {
+//     name: 'Peter',
+//     surname: 'Parker',
+//     age: 22,
+//     position: 'spider-man'
+// }
+
+// const user2 = {
+//   name: "Batman",
+//   surname: "Hz",
+//   age: 36,
+//   position: "batman",
+// };
+
+// user.getinfo = function () {
+//   return `Name: ${this.name}. Surname: ${this.surname}. Age: ${this.age}. Position: ${this.position}.`;
+// };
+
+// Task 2
+// Нужно написать функцию которая принимает 2 параметра obj и key, которая будет перебирать объект
+// если у объекта есть такой ключ - вернет true
+// Есть 2 варианта решения, сначала напишем функцию, потом решим простым способом
+
+// const obj = {
+//     name: 'Igor',
+//     car:  'Mercedes',
+//     carColor: 'black'
+// }
+// const getBool = (obj, key) => key in obj
+// console.log(getBool())
+
+// Task 3
+// Нужно перебрать объекты и вывести имя лучшего сотрудника
+
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+// console.log(
+//   findBestEmployee({
+//     ann: 29,
+//     david: 35,
+//     helen: 1,
+//     lorence: 99,
+//   })
+// ); // lorence
+// console.log(
+//     findBestEmployee({
+//         poly: 12,
+//         mango: 17,
+//         ajax: 4,
+//     }),
+// ); // mango
+// console.log(
+//     findBestEmployee({
+//         lux: 147,
+//         david: 21,
+//         kiwi: 19,
+//         chelsy: 38,
+//     }),
+// ); // lux
+
+
+// Task 5
+// Напиши функцию которая будет считать факториал числа, обязательно использовать рекурсию
+// Task 6
+// У нас есть объект, в котором хранятся зарплаты нашей команды:
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+// Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
+// Если объект salaries пуст, то результат должен быть 0.
