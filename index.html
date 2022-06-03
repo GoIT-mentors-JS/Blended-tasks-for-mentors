@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script src="./index.js" type="module"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    06 module
+    <table>
+      <tr>
+        <td rowspan="2">3</td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+    </table>
+    <button id="my-button">Hello</button>
+    <div onclick="alert('div')">
+      DIV
+
+      <ul onclick="alert('ul')">
+        <li onclick="alert('li')">LI</li>
+      </ul>
+    </div>
+    <div class="warning" id="inline" style="background-color: orange; color: navy">
+      Инлайн стили нежелательно использовать из-за более высокого приоритета чем у id, а также из-за
+      сложности c поддержкой и повторным использованием кода.
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <!-- <script src="./lodash.js" type="module"></script> -->
+    <!-- <script src="./tasks.js" type="module"></script> -->
+    <!-- <script src="./flat.js" type="module"></script> -->
+    <script src="./index.js" type="module"></script>
+    <!-- <script src="./forEach.js" type="module"></script> -->
+  </body>
 </html>
