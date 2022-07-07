@@ -263,5 +263,20 @@
 // return longestWord;
 // }
 
+//3>2>1
+// const max = 50;
+// const min = 23;
+// let total = 0;
+// for (let i = max; i >= min; i -= 1) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//      total += i;
+//   }
+ 
+// }
+// console.log(total);
 
-console.log('5' + 5);
+
+const arr = [1, 2, 6, 5, 10];
+
+console.log(Number.min(...arr));
