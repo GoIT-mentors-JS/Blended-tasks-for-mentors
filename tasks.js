@@ -1,4 +1,5 @@
-//1. Напиши функцию конструктор User для создания пользователя со следующими свойствами
+//TODO:=============================================
+//Напиши функцию конструктор User для создания пользователя со следующими свойствами
 //a. userName - имя, строка
 //b. age - возраст, число
 //c. numbersOfPost - количество постов, число
@@ -29,7 +30,8 @@ const polly = new User({ userName: "Polly", age: 30, numbersOfPost: 15 });
 // console.log(polly);
 // polly.getInfo();
 
-//2. Напиши функцию конструктор Storage который создаёт объкты
+//TODO:=============================================
+//Напиши функцию конструктор Storage который создаёт объкты
 //для управления складом товаров.
 //При вызове будет получать один агрумент - начальный массив товаров,
 //и записывать его в свойство items.
@@ -60,7 +62,8 @@ const storage = new Storage(["apple", "banana", "mango"]);
 // console.log(storage);
 // console.log(storage.removeItem("apple"));
 
-//3. Напиши класс Client котрорый создает объект
+//TODO:=============================================
+//Напиши класс Client котрорый создает объект
 //со свойствами login email
 //Объяви приватные свойства #login #email,
 //доступ к которым сделай через геттер и сеттер login email
@@ -89,10 +92,11 @@ const client = new Client("mango", "mango@gmail.com");
 client.changeEmail = '"mango@gmail.com"';
 // console.log(client.getClientData.email);
 
-//4. Напиши класс Notes который управляет коллекцией заметок в
+//TODO:=============================================
+//Напиши класс Notes который управляет коллекцией заметок в
 //свойстве items.
 //Заметка это объект со свойствами text priority
-//Добавь классу статическое свойство Priority,
+//Добавь классу статическое свойство Priopity,
 //в котором будет храниться объект с приоритетами.
 //Добавь методы addNote(note), removeNote(text)
 //updatePriority(text, newPriority)
@@ -135,7 +139,8 @@ const note1 = new Notes();
 // note1.updatePriority({ text: "Note2", newPriority: Notes.Priority().HIGHT });
 // console.table(note1.items);
 
-//5. Создать класс Worker у которого есть свойства name, age, salary.
+//TODO:=============================================
+//Создать класс Worker у которого есть свойства name, age, salary.
 //У класса Worker есть метод getSalary.
 //Создать класс TopLevelWorker у которого есть свойство hierarchyLevel
 //и который наследует класс Worker, добавляя метод getHierarchyLevel
