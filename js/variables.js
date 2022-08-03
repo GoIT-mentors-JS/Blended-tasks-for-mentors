@@ -1,12 +1,8 @@
-// объявление переменных
-
+//TODO: объявление переменных
 
 // let a = 'Pete';
 // const b = 'John';
 // var c = 'Igor';
-
-
-
 
 // const newArr = [...arr];
 
