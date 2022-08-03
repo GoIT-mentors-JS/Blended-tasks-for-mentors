@@ -26,11 +26,11 @@
 //сохраните его результат в переменной sum.
 //Если объект salaries пуст, то результат должен быть 0
 
-const salaries = {
-  Mango: 100,
-  Poly: 160,
-  Ajax: 1470,
-};
+// const salaries = {
+//   Mango: 100,
+//   Poly: 160,
+//   Ajax: 1470,
+// };
 
 //=======================
 //for(const value of Object.values(obj)){
@@ -148,10 +148,10 @@ const salaries = {
 
 //Типов транзакций всего два.
 //Можно положить либо снять деньги со счета
-const Transaction = {
-  DEPOSIT: "deposit",
-  WITHDRAW: "withdraw",
-};
+// const Transaction = {
+//   DEPOSIT: "deposit",
+//   WITHDRAW: "withdraw",
+// };
 
 //Каждая транзакция это объект со свойствами id, type, amount
 
@@ -218,7 +218,7 @@ const account = {
 //   return `Name: ${this.name}. Surname: ${this.surname}. Age: ${this.age}. Position: ${this.position}.`;
 // };
 
-// Task 2
+//TODO:===========Task9============
 // Нужно написать функцию которая принимает 2 параметра obj и key, которая будет перебирать объект
 // если у объекта есть такой ключ - вернет true
 // Есть 2 варианта решения, сначала напишем функцию, потом решим простым способом
@@ -231,7 +231,7 @@ const account = {
 // const getBool = (obj, key) => key in obj
 // console.log(getBool())
 
-// Task 3
+//TODO:===========Task10============
 // Нужно перебрать объекты и вывести имя лучшего сотрудника
 
 /*
@@ -261,10 +261,10 @@ const account = {
 //     }),
 // ); // lux
 
-
-// Task 5
+//TODO:===========Task11============
 // Напиши функцию которая будет считать факториал числа, обязательно использовать рекурсию
-// Task 6
+
+//TODO:===========Task12============
 // У нас есть объект, в котором хранятся зарплаты нашей команды:
 
 // let salaries = {
