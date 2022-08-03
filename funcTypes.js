@@ -1,8 +1,4 @@
-// объявление функций в js
-
-
-
-
+//TODO: объявление функций в js
 
 // console.log(fnExpr())
 function fnDecl() {
