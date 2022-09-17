@@ -45,7 +45,7 @@
 // const min = 23;
 
 // for (let i = max; i >= min; i--) {
-  // console.log(i);
+// console.log(i);
 // }
 
 //TODO:===================================
@@ -193,7 +193,6 @@
 
 // }
 
-
 //TODO:===================================
 // Напиши скрипт который просит посетителя ввести число в prompt до тех пор,
 // пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме.
@@ -255,8 +254,6 @@
 //   }
 // }
 
-
-
 // function findLongestWord(string) {
 
 // const stringArray = string.split(" ");
@@ -281,10 +278,9 @@
 //     console.log(i);
 //      total += i;
 //   }
- 
+
 // }
 // console.log(total);
-
 
 const arr = [1, 2, 6, 5, 10];
 
