@@ -1,8 +1,8 @@
-//TODO: типы данных в js
+//TODO: типи даних в js
 
 const str = `hello`;
 const num = 234;
-const symb = Symbol('hello');
+const symb = Symbol("hello");
 const bool = true;
 const bigInteger = BigInt(37827327382);
 const arr = [];
@@ -19,7 +19,7 @@ const nu = null;
 // console.log(typeof symb)
 // console.log(typeof bool)
 
-// Преобразования типов
+// Приведення типів
 
 // console.log(Boolean(-1))
 // console.log(Boolean(0))
@@ -36,14 +36,11 @@ const nu = null;
 // const res = str.toString()
 // console.log(res)
 
+//TODO: Навіщо потрібен Symbol
+// Це примітивный тип даних, як boolean чи string, Який потрібен для створення унікальних ідентифікаторів.
 
-
-
-//TODO: Зачем нужен Symbol
-// Это примитивный тип данных, как boolean или string, который нужен для создания уникальных идентификаторов. 
-
-// Существуют «глобальные символы», они доступны во всех частях вашей программы. 
-// То есть вы можете создать символ и поместить его в некую базу, это делается с помощью функции Symbol.for()
+// Існують «глобальні символи», вони доступні в усіх частинах вашої програми.
+// Тобто ви можете створити символ і помістити його в якусь базу, це робиться за допомогою функції Symbol.for()
 
 // console.log(Symbol('Hello') === Symbol('Hello'))
 
