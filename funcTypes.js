@@ -1,21 +1,21 @@
-//TODO: объявление функций в js
+//TODO: оголошення функцій в js
 
 // console.log(fnExpr())
 function fnDecl() {
-    return 'function expression';
+  return "function declaration";
 }
 
-const fnExpr = function() {
-    return 'function declaration'
-}
+const fnExpr = function () {
+  return "function expression ";
+};
 
 const arrowFn = (arr) => {
-    for(const elem of arr) {
-        console.log(elem + "Hello")
-    }
-}
+  for (const elem of arr) {
+    console.log(elem + "Hello");
+  }
+};
 
-//  условия, операторы сравнения, тернарный оператор
+//  оператори порівняння, тернарний оператор
 
 const firstNum = 10;
 const secondNum = 20;
@@ -26,4 +26,8 @@ const secondNum = 20;
 //     return console.log('nepravda')
 // }
 
-firstNum > secondNum ? console.log('pravda') : 5 < 10 ? console.log(true) : console.log(false)
+firstNum > secondNum
+  ? console.log("pravda")
+  : 5 < 10
+  ? console.log(true)
+  : console.log(false);
