@@ -1,14 +1,14 @@
 //TODO:==============================================
-// Получить массив имен всех пользователей (поле name).
+// Отримати масив імен всіх користувачів (поле name).
 // console.log(getUserNames(usersData))
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
 
 //TODO:==============================================
-// Получить массив объектов пользователей по цвету глаз (поле eyeColor).
-// console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
+// Отримати масив об'єктів користувачів за кольором очей (поле eyeColor).
+// console.log(getUsersWithEyeColor(users, 'blue')); // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Carey Barr]
 
 //TODO:==============================================
-// Получить массив имен пользователей по полу (поле gender)
+// Отримати масив імен користувачів за статтю (поле gender)
 // console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
 // const getUsersWithGender = (users, gen) => {
@@ -22,8 +22,8 @@
 // console.log(getUsersWithGender(users, 'male'))
 
 //TODO:==============================================
-// Получить массив только неактивных пользователей (поле isActive).
-// console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
+// Отримати масив тільки неактивних користувачів (поле є активним).
+// console.log(getInactiveUsers(users)); // [об'єкт Moore Hensley, об'єкт Ross Vazquez, об'єкт Blackburn Dotson]
 
 //TODO:==============================================
 // Получить пользователя (не массив) по email (поле email, он уникальный).
