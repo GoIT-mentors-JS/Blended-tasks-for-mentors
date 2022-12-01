@@ -165,10 +165,10 @@
 
 // Типів транзакцій лише два.
 // Можна покласти чи зняти гроші з рахунку
-// const Transaction = {
-// DEPOSIT: "deposit",
-// WITHDRAW: "withdraw",
-//};
+const Transaction = {
+  DEPOSIT: "deposit",
+  WITHDRAW: "withdraw",
+};
 
 //Кожна транзакція це об'єкт з властивостями id, type, amount
 
@@ -192,7 +192,12 @@ const account = {
   //Приймає суму транцякції.
   //Викликає createTransaction для створення об'єкта транзакції
   //після чого додає їх у історію транзакцій
-  deposit(amount) {},
+  deposit(amount) {
+    this.balance += amount;
+    const transaction = this.createTransaction(Transaction.DEPOSIT, amount);
+    this.transactions.push(transaction);
+    console.log(`Операція успішна. На балансі ${this.getBalance()} грн`);
+  },
 
   //Метод відповідає за зняття суми з балансу.
   //Приймає суму транцякції.
@@ -200,10 +205,21 @@ const account = {
   //після чого додає їх у історію транзакцій
   //Якщо amount більше ніж поточний баланс, виводимо повідомлення про те,
   //що недостатньо коштів на рахунку
-  withdraw(amount) {},
+  withdraw(amount) {
+    if (amount > this.balance) {
+      alert("Не достатньо коштів");
+      return;
+    }
+    this.balance -= amount;
+    const transaction = this.createTransaction(Transaction.WITHDRAW, amount);
+    this.transactions.push(transaction);
+    console.log(`Операція успішна. На балансі ${this.getBalance()} грн`);
+  },
 
   //Метод повертає поточний баланс
-  getBalance() {},
+  getBalance() {
+    return this.balance;
+  },
 
   //Метод шукає та повертає об'єкт транзакції по id
   getTransactionDetails(id) {},
@@ -212,6 +228,15 @@ const account = {
   //транзакції з усієї історії транзакцій
   getTransactionType(type) {},
 };
+
+console.log(account.getBalance());
+account.deposit(5000);
+account.deposit(3000);
+account.deposit(4000);
+account.withdraw(3000);
+account.withdraw(9000);
+
+console.log(account.transactions);
 
 //TODO:=======================
 // Потрібно перебрати об'єкти та вивести ім'я кращого співробітника
