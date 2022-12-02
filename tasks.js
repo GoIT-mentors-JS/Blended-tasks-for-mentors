@@ -1,12 +1,12 @@
 //TODO:=============================================
-//Напиши функцию конструктор User для создания пользователя со следующими свойствами
-//a. userName - имя, строка
-//b. age - возраст, число
-//c. numbersOfPost - количество постов, число
-//d. класс ожидает 1 параметр - объект настроек с одноименными свойствами
+//Напиши функцію конструктор User для створення користувача з такими властивостями
+//a. userName - ім'я, рядок
+//b. age - вік, число
+//c. numbersOfPost - кількість постів, число
+//d. клас очікує 1 параметр - об'єкт налаштувань з однойменними властивостями
 
-//Добавь метод getInfo(), который возвращает строку:
-//`Пользователю ${} ${} лет и у него ${} публикаций.`
+//Додай метод getInfo(), який повертає рядок:
+//`Користувачеві ${} ${} років і в нього ${} публікацій.`
 
 const User = function (userObj) {
   const { userName, age, numbersOfPost } = userObj;
@@ -17,9 +17,9 @@ const User = function (userObj) {
 
   // this.getInfo = function () {
   // console.log(
-  //   `Пользователю ${this.username} ${this.age} лет и у него ${this.numbersOfPost} публикаций.`
-  // );
-  // };
+  // `Користувачеві ${this.username} ${this.age} років і в нього ${this.numbersOfPost} публікацій.`
+  //);
+  //};
 };
 User.prototype.getInfo = function () {
   console.log(
@@ -31,14 +31,14 @@ const polly = new User({ userName: "Polly", age: 30, numbersOfPost: 15 });
 // polly.getInfo();
 
 //TODO:=============================================
-//Напиши функцию конструктор Storage который создаёт объкты
-//для управления складом товаров.
-//При вызове будет получать один агрумент - начальный массив товаров,
-//и записывать его в свойство items.
-//Добавь методы класса:
-//getItems() - возвращайте массив товаров
-//addItems(item) - получает новый товар и добавляет его к текущим
-//removeItem(item) - плучает товар и, если он есть, удаляет его из текущих
+//Напиши функцію конструктор Storage який створює об'єкти
+//Для управління складом товарів.
+//При виклику отримуватиме один агрумент - початковий масив товарів,
+//і записувати їх у властивість items.
+//Додай методи класу:
+//getItems() - повертайте масив товарів
+//addItems(item) - отримує новий товар та додає його до поточних
+//removeItem(item) - отримує товар і, якщо він є, видаляє його з поточних
 
 const Storage = function (itemsArray) {
   this.items = itemsArray;
@@ -63,11 +63,10 @@ const storage = new Storage(["apple", "banana", "mango"]);
 // console.log(storage.removeItem("apple"));
 
 //TODO:=============================================
-//Напиши класс Client котрорый создает объект
-//со свойствами login email
-//Объяви приватные свойства #login #email,
-//доступ к которым сделай через геттер и сеттер login email
-
+//Напиши клас Client який створює об'єкт
+//з ​​властивостями login email
+//Оголоси приватні властивості #login #email,
+//доступ до яких зроби через геттер та сеттер login email
 class Client {
   #login;
   #email;
@@ -93,12 +92,12 @@ client.changeEmail = '"mango@gmail.com"';
 // console.log(client.getClientData.email);
 
 //TODO:=============================================
-//Напиши класс Notes который управляет коллекцией заметок в
-//свойстве items.
-//Заметка это объект со свойствами text priority
-//Добавь классу статическое свойство Priopity,
-//в котором будет храниться объект с приоритетами.
-//Добавь методы addNote(note), removeNote(text)
+//Напиши клас Notes який управляє колекцією нотаток у
+//властивості items.
+//Нотатка - це об'єкт із властивостями text і priority.
+//Додай класу статичний метод Priopity,
+//який буде повертати об'єкт із пріоритетами.
+//Додай методи addNote(note), removeNote(text)
 //updatePriority(text, newPriority)
 
 class Notes {
@@ -140,11 +139,11 @@ const note1 = new Notes();
 // console.table(note1.items);
 
 //TODO:=============================================
-//Создать класс Worker у которого есть свойства name, age, salary.
-//У класса Worker есть метод getSalary.
-//Создать класс TopLevelWorker у которого есть свойство hierarchyLevel
-//и который наследует класс Worker, добавляя метод getHierarchyLevel
-//Реализовать задачу с помощью ES5 прототипов и ES6 классов
+// Створити клас Worker, у якого є властивості name, age, salary.
+//У класу Worker є метод getSalary.
+//Створити клас TopLevelWorker, у якого є властивість hierarchyLevel
+//і який успадковує клас Worker, додаючи метод getHierarchyLevel
+//Реалізувати завдання за допомогою ES5 прототипів та ES6 класів
 
 const HIERARCHY_LEVEL = {
   TOP: "top",
@@ -220,43 +219,39 @@ const topES6 = new TopLevelWorkerES6(workerObj, HIERARCHY_LEVEL.TOP);
 // console.log(topES6.__proto__ === ???);
 // console.log(topES6.getSalary());
 
-
-
-//Sasha
 /**
- * Напишите метод `calcTotalPrice(stoneName)`, который принимает название камня и
- * рассчитывает и возвращает общую стоимость камней с таким именем, ценой и
- * количеством из свойства `stones`.
+ * Напишіть метод `calcTotalPrice(stoneName)`, який приймає назву каменю та
+ * розраховує та повертає загальну вартість каменів з таким ім'ям, ціною та
+ * кількістю з якості `stones`.
  */
 
 const chopShop = {
   stones: [
-    { name: 'Emerald', price: 1300, quantity: 4 },
-    { name: 'Diamond', price: 2700, quantity: 3 },
-    { name: 'Sapphire', price: 1400, quantity: 7 },
-    { name: 'Ruby', price: 800, quantity: 2 },
+    { name: "Emerald", price: 1300, quantity: 4 },
+    { name: "Diamond", price: 2700, quantity: 3 },
+    { name: "Sapphire", price: 1400, quantity: 7 },
+    { name: "Ruby", price: 800, quantity: 2 },
   ],
   calcTotalPrice(stoneName) {
     const stone = this.stones.find(({ name }) => name === stoneName);
     if (stone) {
       return stone.price * stone.quantity;
     }
-    alert('Такого камня нет, извините');
+    alert("Такого камня нет, извините");
   },
 };
 
-console.log(chopShop.calcTotalPrice('Emerald')); // 5200
-console.log(chopShop.calcTotalPrice('Diamond')); // 8100
-console.log(chopShop.calcTotalPrice('Sapphire')); // 9800
-console.log(chopShop.calcTotalPrice('Ruby')); // 1600
-
+console.log(chopShop.calcTotalPrice("Emerald")); // 5200
+console.log(chopShop.calcTotalPrice("Diamond")); // 8100
+console.log(chopShop.calcTotalPrice("Sapphire")); // 9800
+console.log(chopShop.calcTotalPrice("Ruby")); // 1600
 
 //TODO:======================
 const phonebook = {
   contacts: [],
   add(data) {
     const newContact = {
-      list: 'default',
+      list: "default",
       ...data,
       id: this.generateId(),
       createdAt: this.getDate(),
@@ -267,7 +262,7 @@ const phonebook = {
     console.table(this.contacts);
   },
   generateId() {
-    return '_' + Math.random().toString(36).substr(2, 9);
+    return "_" + Math.random().toString(36).substr(2, 9);
   },
   getDate() {
     return Date.now();
@@ -275,24 +270,24 @@ const phonebook = {
 };
 
 phonebook.add({
-  name: 'Mango',
-  email: 'mango@mail.com',
-  list: 'friends',
+  name: "Mango",
+  email: "mango@mail.com",
+  list: "friends",
 });
 phonebook.list();
 
 phonebook.add({
-  name: 'Poly',
-  email: 'poly@hotmail.com',
+  name: "Poly",
+  email: "poly@hotmail.com",
 });
 phonebook.list();
 
 //TODO:=====================
 /**
- * Создайте объект `calculator` с тремя методами:
- * - `read(a, b)`- принимает два значения и сохраняет их как свойства объекта.
- * - `add()` - возвращает сумму сохранённых значений.
- * - `mult()` - перемножает сохранённые значения и возвращает результат.
+ * Створіть об'єкт `calculator` з трьома методами:
+ * - `read(a, b)`- приймає два значення та зберігає їх як властивості об'єкта.
+ * - `add()` - повертає суму збережених значень.
+ * - `mult()` - перемножує збережені значення та повертає результат.
  */
 
 const calculator = {
