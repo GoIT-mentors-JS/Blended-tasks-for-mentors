@@ -33,7 +33,7 @@
 // const globalMinutes = 90;
 // const hours = Math.floor(globalMinutes / 60);
 // const modifiedHours = String(hours).padStart(2, 0);
-// const minutes = globalMinutes % 60;
+// const minutes = globalMinutes %  60;
 // const modifiedMinutes = String(minutes).padStart(2, 0);
 
 // const time = `${modifiedHours}:${modifiedMinutes}`;
