@@ -193,25 +193,6 @@
 //const words = ["HTML","CSS", "JS", "React", "JS", "CSS", "JS",
 // "Node.js", "JS", "React", "CSS", "React", "HTML", "Node.js"];
 
-//TODO:============================
-//Створіть функцію multiplyNumeric(obj),
-//яка множить всі числові властивості об'єкта obj на 2.
-// до виклику функції
-// let menu = {
-// width: 200,
-// height: 300,
-// title: "My menu"
-//};
-
-// multiplyNumeric(menu);
-
-// після виклику функції
-// menu = {
-// width: 400,
-// height: 600,
-// title: "My menu"
-//};
-
 //TODO:==============================
 //Перевірка на паліндром
 //const result = 'reversestring'.split('').reverse().join('') ;
@@ -226,3 +207,11 @@
 // "Some str",
 // [777, "word", ["Привіт", ["як сюди дістатися"]]],
 //];
+
+//TODO:==============================
+// У кожному масиві є унікальний рядок, у якому не повторюються літери. Знайдіть та виведіть цей рядок.
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
+
+// findUniq(['abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba']) // === 'foo'
+// findUniq(['fghj', 'ghfj', 'abcd', 'jhgf', 'fghj', 'fgjh', 'ghjf']) // === 'abcd'
+// findUniq(['qwe', 'cmap', 'acmp', 'pmac', 'camp', 'apmc', 'pmac']) // === 'qwe'
