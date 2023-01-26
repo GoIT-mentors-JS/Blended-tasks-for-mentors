@@ -1,21 +1,21 @@
 //TODO:=======================
 //Напиши скрипт, який для об'єкта user,
 //Послідовно:
-//1 додасть поле mood зі значенням 'happy'
-//2 замінить hobby на 'skydiving'
-//3 замінить значення premium на false
-//4 виводить вміст об'єкта user у форматі
+//1 додати поле mood зі значенням 'happy'
+//2 замінити hobby на 'skydiving'
+//3 замінити значення premium на false
+//4 виводити вміст об'єкта user у форматі
 //ключ:значення використовуючи Object.keys() і for...of
 // const user = {
-//   name: "John",
-//   age: 20,
-//   hobby: "tenis",
-//   premium: true,
-// };
+// name: "John",
+// age: 20,
+// hobby: "tenis",
+// premium: true,
+//};
 
 //=======================
 //for(const key of Object.keys(obj)){
-//  console.log(`${key}:${obj[key]}`)
+// console.log(`${key}:${obj[key]}`)
 //}
 //=======================
 
@@ -137,6 +137,11 @@
 //https://coderoad.ru/208105/%D0%9A%D0%B0%D0%BA-%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%B8%D0%B7-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0-JavaScript
 
 //TODO:=======================
+//Напишите функцию updateObject, которая принимает объект и возвращает
+//новый объект без указанных параметров
+//Ожидаемый результат ({a: 1, b: 2, c: 3}, 'b', 'a') => {c: 3}
+
+//TODO:=======================
 //Напишіть функцію, яка приймає як параметр об'єкт
 //і формує об'єкти у новому масиві у форматі [key, value]
 
@@ -165,10 +170,10 @@
 
 // Типів транзакцій лише два.
 // Можна покласти чи зняти гроші з рахунку
-const Transaction = {
-  DEPOSIT: "deposit",
-  WITHDRAW: "withdraw",
-};
+// const Transaction = {
+//   DEPOSIT: "deposit",
+//   WITHDRAW: "withdraw",
+// };
 
 //Кожна транзакція це об'єкт з властивостями id, type, amount
 
@@ -229,20 +234,19 @@ const account = {
   getTransactionType(type) {},
 };
 
-console.log(account.getBalance());
-account.deposit(5000);
-account.deposit(3000);
-account.deposit(4000);
-account.withdraw(3000);
-account.withdraw(9000);
+// console.log(account.getBalance());
+// account.deposit(5000);
+// account.deposit(3000);
+// account.deposit(4000);
+// account.withdraw(3000);
+// account.withdraw(9000);
 
-console.log(account.transactions);
+// console.log(account.transactions);
 
 //TODO:=======================
 // Потрібно перебрати об'єкти та вивести ім'я кращого співробітника
-
 /*
- * Вызовы функции для проверки работоспособности твоей реализации.
+ * Виклики функції для перевірки працездатності твоєї реалізації.
  */
 // console.log(
 //   findBestEmployee({
@@ -270,3 +274,32 @@ console.log(account.transactions);
 
 //TODO:=======================
 // Напиши функцію яка вважатиме факторіал числа, обов'язково використовувати рекурсію
+
+//TODO:============================
+//Створіть функцію multiplyNumeric(obj),
+//яка множить всі числові властивості об'єкта obj на 2.
+// до виклику функції
+// let menu = {
+// width: 200,
+// height: 300,
+// title: "My menu"
+//};
+
+// multiplyNumeric(menu);
+
+// після виклику функції
+// menu = {
+// width: 400,
+// height: 600,
+// title: "My menu"
+//};
+
+//TODO:=======================
+// 4. Виправте помилки, щоб код працював
+// const product = {
+// ціна: 5000,
+// showPrice() {
+// console.log(price);
+// },
+//};
+// product.showPrice();
