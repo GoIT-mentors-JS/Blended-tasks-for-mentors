@@ -219,33 +219,6 @@ const topES6 = new TopLevelWorkerES6(workerObj, HIERARCHY_LEVEL.TOP);
 // console.log(topES6.__proto__ === ???);
 // console.log(topES6.getSalary());
 
-/**
- * Напишіть метод `calcTotalPrice(stoneName)`, який приймає назву каменю та
- * розраховує та повертає загальну вартість каменів з таким ім'ям, ціною та
- * кількістю з якості `stones`.
- */
-
-const chopShop = {
-  stones: [
-    { name: "Emerald", price: 1300, quantity: 4 },
-    { name: "Diamond", price: 2700, quantity: 3 },
-    { name: "Sapphire", price: 1400, quantity: 7 },
-    { name: "Ruby", price: 800, quantity: 2 },
-  ],
-  calcTotalPrice(stoneName) {
-    const stone = this.stones.find(({ name }) => name === stoneName);
-    if (stone) {
-      return stone.price * stone.quantity;
-    }
-    alert("Такого камня нет, извините");
-  },
-};
-
-console.log(chopShop.calcTotalPrice("Emerald")); // 5200
-console.log(chopShop.calcTotalPrice("Diamond")); // 8100
-console.log(chopShop.calcTotalPrice("Sapphire")); // 9800
-console.log(chopShop.calcTotalPrice("Ruby")); // 1600
-
 //TODO:======================
 const phonebook = {
   contacts: [],
@@ -282,33 +255,33 @@ phonebook.add({
 });
 phonebook.list();
 
-//TODO:=====================
-/**
- * Створіть об'єкт `calculator` з трьома методами:
- * - `read(a, b)`- приймає два значення та зберігає їх як властивості об'єкта.
- * - `add()` - повертає суму збережених значень.
- * - `mult()` - перемножує збережені значення та повертає результат.
- */
+//TODO:======================
+// Створи клас для калькулятора, який має такі методи:
+// метод number, який набуває початкового значення для наступних операцій
+// Геттер, який повертає фінальний результат усіх операцій, проведених із числом
+// методи add, substruct, divide, multiply
+// Об'єкт класу може проводити послідовні операції у вигляді ланцюжка
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const calculator = {
-  x: 0,
-  y: 0,
-  read(a, b) {
-    this.x = a;
-    this.y = b;
-  },
-  add() {
-    return this.x + this.y;
-  },
-  mult() {
-    return this.x * this.y;
-  },
-};
+class Calculator {}
 
-calculator.read(5, 10);
-console.log(calculator.add());
-console.log(calculator.mult());
+// const calculator = new Calculator();
+// const res = calculator
+// .number(10)
+// .add(10)
+// .divide(2)
+// .multiply(4)
+// .substruct(5)
+// .result;
 
-calculator.read(15, 20);
-console.log(calculator.add());
-console.log(calculator.mult());
+// console.log(res); // 35
+
+// const res2 = calculator
+// .number(20)
+// .substruct(40)
+// .multiply(-8)
+// .divide(160)
+// .add(20)
+// .result;
+
+// console.log(res2) // 21
