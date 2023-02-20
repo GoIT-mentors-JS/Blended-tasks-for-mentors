@@ -91,3 +91,20 @@ https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageY
 Коло має зникати при наведенні на нього.
 При цьому позиція сусідніх кіл має залишатися незмінною.
 */
+
+//TODO:==============================================
+
+// Завдання 14
+// Написати функцію, яка буде створювати список подій клавіатури event.key та event.code
+// Додати класи на список eventList, на елементи eventCode та eventKey
+const eventThumb = document.querySelector('.eventThumb');
+
+document.addEventListener('keydown', ({ code, key }) => {
+  const markup = `
+    <ul class="eventList">
+      <li class="eventKey"><b>Key</b>: ${key}</li>
+      <li class="eventCode"><b>Code</b>: ${code}</li>
+    </ul>
+  `;
+  eventThumb.insertAdjacentHTML('afterbegin', markup);
+});
