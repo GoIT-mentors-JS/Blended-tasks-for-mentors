@@ -114,3 +114,94 @@ const eventThumb = document.querySelector('.eventThumb');
 // 
 
 */
+
+//TODO:======================
+// Завдання 15
+// Взяти попереднє завдання з Зоопарком та вивести звірів, їх тип та особливості в DOM.
+// Додати до списку клас animalList.На елемент списку animalElement
+
+// class Zoo {
+//   constructor() {
+//     this.animals = [];
+//     this.animalWrapper = document.querySelector('.zooWrapper');
+//     this.animList = document.createElement('ul');
+//   }
+
+//   addAnimal(animal) {
+//     this.animals.push(animal);
+//   }
+
+//   listAnimals() {
+//     this.animals.forEach(obj => {
+//       const item = document.createElement('li');
+//       const animalName = document.createElement('p');
+//       const animalType = document.createElement('p');
+//       const species = document.createElement('p');
+
+//       animalName.textContent = `Name: ${obj.name}`;
+//       animalType.textContent = `Type: ${obj.type}`;
+
+//       if (obj.species) {
+//         species.textContent = `Species: ${obj.species}`;
+//       }
+
+//       if (obj.wingspan) {
+//         species.textContent = `Wingspan: ${obj.wingspan}`;
+//       }
+
+//       item.append(animalName);
+
+//       item.append(animalType);
+
+//       item.append(species);
+
+//       item.classList.add('animalElement');
+
+//       this.animList.classList.add('animalList');
+
+//       this.animList.prepend(item);
+
+//       this.animalWrapper.prepend(this.animList);
+//     });
+//   }
+// }
+
+// const zoo = new Zoo();
+
+//TODO:======================
+// Завдання 16
+//  Створіть HTML сторінку з табличкою,
+//  яка містить список продуктів.Кожен рядок у
+//  табличці повинен містити назву продукту та його ціну.
+//  При натисканні на будь - який рядок у табличці відобразіть
+//  повідомлення з назвою продукту та його ціною.
+
+// const productTable = document.getElementById('productTable');
+// const productDetails = document.getElementById('productDetails');
+
+// productTable.addEventListener('click', function (event) {
+//   // Якщо натиснуто не на рядок, повертаємося
+//   if (event.target.tagName !== 'TD') {
+//     return;
+//   }
+//   const row = event.target.parentNode;
+//   const productName = row.cells[0].textContent;
+//   const productPrice = row.cells[1].textContent;
+//   productDetails.textContent = `Ви вибрали ${productName} за ${productPrice}.`;
+// });
+
+//TODO:======================
+// Завдання 17
+// Створіть HTML сторінку з формою,
+// яка містить поле введення для введення
+// імені користувача та кнопку.При натисканні
+// на кнопку відобразіть повідомлення з привітанням з іменем користувача.
+
+// const usernameInput = document.getElementById("username");
+// const greetingButton = document.getElementById("greetingButton");
+// const greetingMessage = document.getElementById("greetingMessage");
+
+// greetingButton.addEventListener("click", function () {
+//   const username = usernameInput.value;
+//   greetingMessage.textContent = `Привіт, ${username}!`;
+// });
