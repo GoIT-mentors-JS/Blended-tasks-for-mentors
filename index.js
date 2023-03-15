@@ -93,6 +93,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageY
 */
 
 //TODO:==============================================
+
 /*
 Завдання 14
 Написати функцію, яка буде створювати список подій клавіатури event.key та event.code
@@ -205,3 +206,4 @@ const eventThumb = document.querySelector('.eventThumb');
 //   const username = usernameInput.value;
 //   greetingMessage.textContent = `Привіт, ${username}!`;
 // });
+
