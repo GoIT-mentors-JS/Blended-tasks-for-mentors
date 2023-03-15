@@ -112,3 +112,24 @@ div {
 .eventCode {
   color: blueviolet;
 }
+
+
+.zooWrapper {
+  width: 768px;
+  margin: 0 auto;
+}
+
+.animalList {
+  display: flex;
+  gap: 24px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.animalElement {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid firebrick;
+}
