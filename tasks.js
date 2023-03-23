@@ -103,7 +103,7 @@ client.changeEmail = '"mango@gmail.com"';
 class Notes {
   static Priority() {
     return {
-      HIGHT: "hight",
+      HIGH: "high",
       LOW: "low",
     };
   }
