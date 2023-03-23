@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+
+  <body>
+      <!-- Задача 1 -->
+      <h2>Задача 1</h2>
+      <ul id="allProducts"></ul>
+
+      <!-- Задача 2 -->
+      <h2>Задача 2</h2>
+      <form id="singleProductForm">
+        <label for="id">Введите ID продукта</label>
+        <input type="number" name="id"/>
+        <button type="submit">Найти</button>
+      </form>
+      <div id="singleProduct"></div>
+
+      <!-- Задача 3 -->
+      <h2>Задача 3</h2>
+      <form>
+        <label>Название</label>
+        <input type="text" name="title">
+
+        <label>Описание</label>
+        <input type="text" name="description">
+
+        <label>Цена</label>
+        <input type="number" name="price">
+        <button type="submit">Добавить</button>
+      </form>
+      <div id="newProductSection"></div>
+
+      <!-- Задача 4 -->
+      <h2>Задача 4</h2>
+      <form id="deletionProductForm">
+        <label for="id">Введите ID продукта для удаления</label>
+        <input type="number" name="deletionId"/>
+        <button type="submit">Удалить</button>
+      </form>
+
+      <!-- Задача 5 -->
+      <h2>Задача 5</h2>
+      <ul id="allUsers"></ul>
+
+      <!-- Задача 6 -->
+      <h2>Задача 6</h2>
+      <form id="userByNameForm">
+        <label for="id">Введите имя</label>
+        <input type="text" name="name"/>
+        <button type="submit">Найти пользователей</button>
+      </form>
+      <ul id="usersByName"></ul>
+
+      <!-- Задача 7 -->
+      <h2>Задача 7</h2>
+      <form id="userCartsForm">
+        <label for="id">Введите ID пользователя для получения карт</label>
+        <input type="number" name="userId"/>
+        <button type="submit">Найти</button>
+      </form>
+      <ul id="carts"></ul>
+
+      <!-- Задача 8 -->
+      <h2>Задача 8</h2>
+      <form id="userPostsForm">
+        <label for="id">Введите ID пользователя для получения постов</label>
+        <input type="number" name="userId"/>
+        <button type="submit">Найти</button>
+      </form>
+      <ul id="posts"></ul>
+
+      <!-- Задача 9 -->
+      <h2>Задача 9</h2>
+        <form>
+          <label>Имя</label>
+          <input type="text" name="firstName">
+      
+          <label>Фамилия</label>
+          <input type="text" name="lastName">
+      
+          <label>Email</label>
+          <input type="email" name="email">
+
+          <label>Пароль</label>
+          <input type="password" name="password">
+          <button type="submit">Добавить пользователя</button>
+        </form>
+      <div id="newUserSection"></div>
+
+      <!-- Задача 10 -->
+      <h2>Задача 10</h2>
+      <form id="filteredPostsForm">
+        <label for="id">Введите ключевое слово</label>
+        <input type="text" name="keyword"/>
+        <button type="submit">Найти посты</button>
+      </form>
+      <ul id="filteredPosts"></ul>
+      
+
+      <!-- Задача 11 -->
+      <h2>Задача 11</h2>
+      <ul id="allPosts"></ul>
+
+
+  </body>
+</html>
