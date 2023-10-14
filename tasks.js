@@ -368,3 +368,60 @@ class Calculator {}
 // zoo.addAnimal(eagle);
 
 // zoo.listAnimals();
+
+//TODO:===================
+// Створіть клас "Валюта"
+// Властивості класу:
+
+// code: Рядок, який представляє код валюти (наприклад, "USD" для долара США).
+// name: Рядок, який представляє назву валюти (наприклад, "Долар США").
+// symbol: Рядок, який містить символ валюти (наприклад, "$").
+
+// Створи метод класу convertTo(amount, targetCurrency)
+// Метод, який конвертує вказану суму з поточної валюти в цільову валюту
+
+// Створи форму "Додати валюти", форма має містити поля які необхідно додати до класу. Після сабміту форми створи картку з даною валютою
+
+class Currency {
+  #code;
+  #name;
+
+  constructor({ code, name, symbol, exchangeRate }) {
+    this.#code = code;
+    this.#name = name;
+    this.symbol = symbol;
+    this.exchangeRate = Number(exchangeRate);
+  }
+
+  convertTo(amount, targetCurrency) {
+    if (targetCurrency instanceof Currency) {
+      return (
+        amount *
+        (this.exchangeRate / targetCurrency.exchangeRate)
+      ).toFixed(2);
+    }
+  }
+}
+
+const usd = new Currency("USD", "Долар США", "$", 1);
+const eur = new Currency("EUR", "Євро", "€", 1.1);
+
+const refs = {
+  form: document.querySelector(".js-form"),
+  list: document.querySelector(".js-list"),
+};
+
+refs.form.addEventListener("submit", handlerSubmit);
+const resultArray = [];
+
+function handlerSubmit(e) {
+  e.preventDefault();
+
+  const formData = new FormData(e.currentTarget);
+
+  const currency = {};
+  formData.forEach((value, key) => {
+    currency[key] = value;
+  });
+  resultArray.push(new Currency(currency));
+}
