@@ -1,262 +1,270 @@
-//TODO:===================================
-// Якщо змінна number дорівнює 10, виведіть 'Вірно', інакше виведіть 'Невірно'.
+//TODO:==============================Функції
+// Напишіть функцію min(a,b), яка повертає менше чисел a і b.
 
-//TODO:===================================
-// У змінній min лежить число від 0 до 59.
-// Визначте, в яку чверть години потрапляє
-// це число(у першу, другу, третю чи четверту).
-// const min = 10;
-// if (min >= 0 && min <= 14) {
-//   alert("В першу чверть.");
+//TODO:==============================
+// Наступна функція повертає true, якщо параметр age більше 18.
+// В іншому випадку вона запитує підтвердження через confirm і повертає його результат:
+
+// const age = prompt('Enter your age')
+
+// function isAdult() {}
+
+//TODO:==========================
+//Напишіть функцію min(a, b), яка повертає
+//менше з чисел a, b
+//Потрібно додати перевірку, що функція отримує числа
+
+//TODO:==============================
+// Напишіть функцію pow(x,n), яка повертає x до ступеня n.
+// Інакше висловлюючись, множить x він n разів і повертає результат.
+
+//TODO:==============================
+// Функція formatMessage(message, maxLength)
+// приймає рядок (параметр message) і форматує його,
+// якщо довжина перевищує значення параметрі maxLength.
+
+// function formatMessage(message, maxLength) {
+//   return message.length > maxLength
+//     ? message.slice(0, maxLength) + "..."
+//     : message;
 // }
-// if (min >= 15 && min <= 30) {
-//   alert("В другу чверть.");
-// }
-// if (min >= 31 && min <= 45) {
-//   alert("В третю чверть.");
-// }
-// if (min >= 46 && min <= 59) {
-//   alert("В четверту чверть.");
-// }
+// formatMessage("Curabitur ligula sapien", 16); //Повертає 'Curabitur ligula...'.
+// formatMessage("Curabitur ligula sapien", 23); //Повертає 'Curabitur ligula sapien'.
+// formatMessage("Nunc sed turpis a felis in nunc fringilla", 15); //Повертає 'Nunc sed turpis...'.
+// formatMessage("Nunc sed turpis a felis in nunc fringilla", 41); //Повертає 'Nunc sed turpis a felis in nunc fringilla'.
 
-//TODO:===================================
-// Змінна num може набувати 4 значення: 1, 2, 3 або 4. Якщо вона має
-// значення '1', то у змінну result запишемо 'зима', якщо має значення
-// '2' - 'весна' і так далі. Розв'яжіть завдання через switch-case.
-
-//TODO:===================================
-//Використовуючи конструкцію if...else,
-//напишіть код, який запитуватиме:
-//"Яка офіційна назва JavaScript?"
-//Якщо користувач вводить "ECMAScript",
-// показати через alert: "Вірно!"
-//інакше відобразити: "Не знаєте? ECMAScript!"
-
-// const question = prompt("Яка офіційна назва JavaScript?");
-
-//TODO:===================================
-// Напишіть програму, яка отримає від користувача
-//число (кількість хвилин) і виведе у консоль
-//рядок у форматі годин і хвилин
-//70 === 01:10
-// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
-// 70 === 01:10
-// const globalMinutes = 90;
-// const hours = Math.floor(globalMinutes / 60);
-// const modifiedHours = String(hours).padStart(2, 0);
-// const minutes = globalMinutes %  60;
-// const modifiedMinutes = String(minutes).padStart(2, 0);
-
-// const time = `${modifiedHours}:${modifiedMinutes}`;
-
-//TODO:===================================
-//Напишіть код, який запитуватиме
-//логін за допомогою prompt і логувати результат
-//в консоль браузера
-
-//Якщо відвідувач вводить "Адмін",
-//то prompt запитує пароль.
-//Якщо нічого не ввели або натиснута клавіша Esc
-//Вивести стороку "Скасовано"
-// Інакше вивести рядок "Я вас не знаю"
-
-//Пароль перевіряти так:
-//Якщо введено пароль "Я головний",
-//то вивести рядок "Добрий день!"
-//інакше виводити рядок "Невірний пароль!"
-
-// const loginInput = prompt("Введіть свій логін");
-
-// if (loginInput === "Адмін") {
-//   const passwordInput = prompt("Введите свой пароль");
-//   if (passwordInput) {
-//     if (passwordInput === "Я главный") {
-//       console.log("Здравствуйте");
-//     } else {
-//       console.log("Неверный пароль");
-//     }
-//   } else {
-//     console.log("Отменено");
-//   }
+//TODO:==========================
+//Напишіть скрипт, який замінює регістр кожного символу
+//У сторіччі на протилежний
+//Наприклад 'JavaScript' повинен повернути 'jAVAsCRIPT'
+// const string = "JavaScript";
+// const letters = string.split("");
+// let invetedString = "";
+// invetedString += letter === letter.toLocaleLowerCase()? letter.toLocaleUpperCase(): letter.toLocaleLowerCase()
+// for (const letter of letters) {
+// if (letter === letter.toLocaleLowerCase()) {
+// console.log("ця буква в нижньому регістрі!", Letter);
+// invetedString += letter.toLocaleUpperCase();
 // } else {
-//   console.log("Я вас не знаю!");
+// console.log("ця буква у верзному регістрі!", Letter);
+// invetedString += letter.toLocaleLowerCase();
+// }
 // }
 
-//TODO:===================================
-//Даний рядок, що складається із символів, наприклад, 'abcde'.
-// Перевірте, що першим символом цього рядка є буква 'a'.
-// Якщо це так - виведіть 'так', інакше виведіть 'ні'.
+//TODO:==============================Масиви
+// Що виведе наступний код?
+// let fruits = ["Яблука", "Груша", "Апельсин"];
+// Додаємо нове значення в "копію"
+// let shoppingCart = fruits;
+//shoppingCart.push("Банан");
+// що у fruits?
+// alert( fruits.length );
 
-//TODO:===================================
-// Напишіть if..else, що відповідає наступному switch:
+//TODO:===========================
+// Створіть масив styles з елементами «Джаз» та «Блюз».
+//Додайте "Рок-н-рол" в кінець.
+// Замініть значення "Блюз" на "Класика".
+//Видалить перший елемент масиву і виведіть його в консоль.
+//Вставте «Реп» і «Реггі» на початок масиву.
 
-// switch (browser) {
-//   case 'Edge':
-//     alert( "You've got the Edge!" );
-//     break;
+//TODO:==============================
+// Напиши функцію, яка перебирає масив логінів і перевіряє
+// чи є ім'я введене в інпут у цьому масиві і у разі, якщо є - виводить повідомлення "Доступ дозволено"
 
-//   case 'Chrome':
-//   case 'Firefox':
-//   case 'Safari':
-//   case 'Opera':
-//     alert( 'Okay we support these browsers too' );
-//     break;
+// const res = prompt('vvedi name')
+// const str = 'Peter John Igor Sasha'
 
-//   default:
-//     alert( 'We hope that this page looks ok!' );
+// str.includes(res) ? console.log('ok') : console.log('ne ok')
+
+//TODO:============================
+//Напишіть функцію unique(arr), яка повертає масив,
+//містить лише унікальні елементи arr.
+//const words = ["HTML","CSS", "JS", "React", "JS", "CSS", "JS",
+// "Node.js", "JS", "React", "CSS", "React", "HTML", "Node.js"];
+
+//TODO:==========================
+//Напишіть функцію caclculateAverage()
+//яка приймає довільну кількість
+//аргументів і повертає їхнє середнє значення.
+//Додати перевірку, що аргументи це числа.
+
+// function calculateAverage() {
+//   const args = arguments;
+//   let sum = 0;
+//   let totalCount = 0;
+//   for (const arg of args) {
+//     if (typeof arg !== "number") {
+//       continue;
+//     }
+//     sum += arg;
+//     totalCount += 1;
+//   }
+//   return sum / totalCount;
 // }
 
-//TODO:===================================
-// скористаємося циклом while та виведіть у консоль числа від 0 до 50
+//TODO:==============================
+// напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
 
-//TODO:===================================
-//Напишіть цикл, який виводить у консоль
-// числа від max до min за спаданням
-// Додайте усі парні числа від min до max
-// const max = 50;
-// const min = 23;
+//TODO:==============================
+// Напишіть рішення, яке обчислює суму
+// Квадратного коріння для всіх чисел у яких квадратний корінь буде цілим числом і пушити числа в новий масив.
+// const arr = [4, 3, 5, 16, 16, 33, 4, 9]
 
-// for (let i = max; i >= min; i--) {
-// console.log(i);
+//TODO:==========================
+//Напишіть функцію logItems(array), яка приймає
+//масив та використовує цикл for, який для кожного
+//елемента масиву виводитиме повідомлення у форматі
+//<номер елемента> - <значення елемента>
+//Нумерація елементів має починатися з першого.
+//['Джаз', 'Блюз', 'Рок-н-рол', 'Реггі', 'Реп']
+//[{name: 'Джаз', engl: "jazz", number: 1}, {name: 'Блюз', engl: "blues", number: 2}, {name: 'Рок-н-рол', engl: "rock 'n' roll", number: 3}, {name: 'Реггі', engl: "reggae", number: 4}, {name: 'Реп', engl: "rap", number: 5} ]
+
+//TODO:==========================
+//Напиши функцію findSmallerNumber(numbers)
+//яка шукає найменше число в масиві.
+//Додай перевірку що функція отримує масив
+// const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
+
+//TODO:==========================
+//Повернути відсортовану копію масиву за зростанням
+//не змінюючи вихідний масив
+//не використовувати Array.prototype.sort()
+// const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
+
+// function bb(numbers) {
+//   for (let i = 0; i < numbers.length; i++) {
+//     for (let j = 0; j < numbers.length; j++) {
+//       if (numbers[j] > numbers[j + 1]) {
+//         let temp = numbers[j];
+//         numbers[j] = numbers[j + 1];
+//         numbers[j + 1] = temp;
+//       }
+//     }
+//   }
+//   return numbers;
 // }
 
-//TODO:===================================
-//За допомогою циклу for додайте всі парні числа від min до max
+//TODO:==========================
+//Напиши функцію findLongestWord(string)
+//яка приймає довільний рядок
+//що складається лише з розділених слів
+//пробілом (параметр string)
+//і повертає найдовше слово у цьому рядку
 
-//const max = 50;
-//const min = 0;
-// let total = 0;
-// for (let i = min; i < max; i++) {
-//   if (i % 2 !== 0) {
-//     continue;
-//   }
-//   total += i;
+// function findLongestWord(string) {
+
+// const stringArray = string.split(" ");
+// let longestWord = stringArray[0];
+// const maxLength = longestWord.length;
+
+// for (word of stringArray) {
+//   const wordLength = word.length;
+
+//   if (wordLength > maxLength) {
+//       longestWord = word;}
+// }
+// return longestWord;
 // }
 
+//TODO:==========================
+//Напишіть функції для роботи з масивом
+//add(name) додає курс до кінця колекції
+//removeCourse(name) видаляє курс із колекції
+//updateCourse(oldName, newName) змінює ім'я на нове
 
-//TODO:===================================
-//При завантаженні сторінки користувачеві пропонується
-//в prompt ввести число. Введення додається до значення
-//змінної total.
-//Операція введення числа триває до того часу,
-//поки користувач не натисне кнопку Cancel в prompt.
-//Після того, як користувач припинив введення натиснувши на
-//кнопку Cancel, показати alert з рядком "Загальна сума введених чисел дорівнює [число]."
-//Робити перевірку,що користувач ввів саме число,
-//а не довільний набір символів, не потрібно.
+//TODO:==========================
+//Напишіть код для пошуку пароля в масиві
+//Через include і тернарний оператор
+// const passwords = ['ajax123', 'polly456', 'mango789', 'semiBold'];
+// const password = 'semiBold';
 
-// const inputValue = prompt('Введіть число');
-// let check = false;
-// let total = 0;
+//TODO:============================
+//rgb to hex
+//https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
 
-// do {
-//   if (inputValue) {
-//     check = true;
-//     total += Number(inputValue);
-//     inputValue = prompt("Введіть число");
-//   } else {
-//     check = false;
-//     alert(`Загальна сума чисел дорівнює ${total}`);
-//   }
-// } while (check);
-
-//TODO:===================================
-//Напишіть цикл, який пропонує ввести
-//число більше 100 через prompt.
-//Якщо відвідувач ввів інше число - попросити
-//ввести ще раз і так далі.
-//Цикл має питати число, поки відвідувач не
-//введе число більше 100, або натисне кнопку
-//скасування в prompt
-
-// const input = prompt("Введіть число більше 100");
-// let chech = false;
-// console.log(input < 100);
-
-// while (input < 100 && input !== null) {
-//   input = prompt("Введіть число більше 100");
-// }
-// alert(`${input}`);
-// do {
-//   if (Number(input) < 100) {
-//     check = true;
-//     input = prompt("Введіть число більше 100");
-//   } else {
-//     check = false;
-//   }
-// } while (chech);
-
-//TODO:===================================
-//Якщо число ділитися на 3 повертати
-//fizz якщо ділитися на 5 повертати buzz
-//Якщо ділитися на 3 і на 5 повернути fizzbuzz
-
-//fizzBuzz(24);
-// function fizzBuzz(num) {
-//      for (let i = 1; i <= num; i++) {
-//         if (i % 3 === 0 && i % 5 === 0) {
-//           console.log('fizzbuzz');
-//         }
-//         else if (i % 3 === 0) {
-//           console.log('fizz');
-//         }
-//         else if (i % 5 === 0) {
-//           console.log('buzz');
-//         }
-//         else {
-//           console.log(i);
-//         }
-//      }
-
+// function componentToHex(c) {
+//   let hex = c.toString(16);
+//   return hex.length === 1 ? "0" + hex : hex;
 // }
 
-//TODO:===================================
-// За допомогою циклу for виведіть парні числа від min до max. Функція має повертати середнє значення парних чисел в даному діапазоні
-
-//TODO:===================================
-// Повторювати цикл, поки введення неправильне
-// Напишіть цикл, який пропонує prompt ввести число більше 100.
-// Якщо відвідувач ввів інше число - попросити ввести ще раз, і таке інше.
-// Цикл повинен запитувати число поки що або відвідувач не введе число, більше 100,
-// або натисне кнопку Скасувати (ESC).
-// Передбачається, що відвідувач вводить лише числа. Передбачати обробку
-// нечислових рядків у цій задачі необов'язково.
-
-// let total = 0;
-
-// while (true) {
-//   const answer = prompt('enter number > 100');
-//   if (answer === null) {
-//     alert(`sum = ${total}`);
-//     break;
-//   }
-//   if (Number.isNaN(+answer)) {
-//     alert('you enter non a number');
-//   }
-//   if (!Number.isNaN(+answer) && +answer > 99) {
-//     total += +answer;
-//   }
-//   if (!Number.isNaN(+answer) && +answer <= 99) {
-//     alert('your number is lower then 100')
-//   }
+// function rgbToHex(r, g, b) {
+//   return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 // }
+// rgbToHex;
+// 0, 51, 255;
 
+//TODO:============================
+//Написати функцію, яка розіб'є рядок на масив
+//по 2 літери, якщо останньої літери немає пари, то
+//має записатися 1 літера.
+//Даний рядок 'abc' - поверне ['ab', 'c']
 
+//*якщо остання буква не має пари, поверне _
+//Рядок 'abc' - поверне ['ab', 'c_']
 
-//3>2>1
-// const max = 50;
-// const min = 23;
-// let total = 0;
-// for (let i = max; i >= min; i -= 1) {
-//   if (i % 2 === 0) {
-//     console.log(i);
-//      total += i;
-//   }
+//TODO:==============================
+//Перевірка на паліндром
+//const result = 'reversestring'.split('').reverse().join('') ;
+//Льоша на полиці клопа знайшов
+//А троянда впала на Азора лапу
 
-// }
-// console.log(total);
+//TODO:==============================
+// привести масив до одного рівня не використовуючи flat
 
+// const arr = [
+// [23, 11, ["hello", "world", "Vasya"]],
+// "Some str",
+// [777, "word", ["Привіт", ["як сюди дістатися"]]],
+//];
+
+//TODO:==============================
+// У кожному масиві є унікальний рядок, у якому не повторюються літери. Знайдіть та виведіть цей рядок.
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
+
+// findUniq(['abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba']) // === 'foo'
+// findUniq(['fghj', 'ghfj', 'abcd', 'jhgf', 'fghj', 'fgjh', 'ghjf']) // === 'abcd'
+// findUniq(['qwe', 'cmap', 'acmp', 'pmac', 'camp', 'apmc', 'pmac']) // === 'qwe'
+
+//TODO:===================================
+// Написати ф-цію, яка створює масив із зазначеною довжиною та наповнює його переданим значенням
+// приклад: ф-ція fillArray(3, 'a') повинна повертати масив ['a', 'a', 'a']
+
+//TODO:===================================
+// Написати ф-цію, яка прибиратиме з масиву всі значення, які перетворюються на false
+// undefined, null, false, '', 0, NaN
 
 //
+// const array = [
+// 1,
+// 0,
+// 54,
+// "doc",
+// null,
+// "jpg",
+// undefined,
+// "",
+// "png",
+// "exe",
+// false,
+// "mp4",
+// NaN,
+// "hbs",
+//];
 
+//TODO:===================================
+// Перевірити два масиву і дізнатися, чи вони рівні
 
+//
+// const arr1 = [1, 4, 6, "color", 324, 232, "list", 11, 9, "dream", 34, 0, -30];
+// const arr2 = [6, "dream", -30, 11, 9, 1, 324, 34, "color", 4, 232, 0, "list"];
+
+// const arr3 = [4, 232, 6, -30, "color", 324, "list", 1, 11, 9, "dream", 34, 0];
+// const arr4 = ["color", 6, -30, 11, 9, 1, "dream", 324, 34, 4, 232, 0, "list"];
+
+// const arr5 = [1, 4, 6, "color", "list", 11, 9, "dream", 34, 0, -30, "lesson"];
+// const arr6 = [6, 324, "dream", -30, 9, 8, 34, "color", 4, 232, 0, "list", 11];
+
+// const arr7 = [1, 4, 6, "color", 324, 232, "list", 11, 9, "dream", 34, 0, -30];
+// const arr8 = [6, "dream", -30, 10, 9, 1, 324, 34, "color", 4, 232, 0, "list"];
+//
